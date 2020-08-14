@@ -14,7 +14,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                bat(/"C:\Users\sanka\Learn\terraform\terraform" -version/)
+                bat(/"cd C:\Users\sanka\Learn\terraform\terraform1\"/)
+                bat(/"C:\Users\sanka\Learn\terraform\terraform" plan -var-file="../terraform.tfvars"/)
             }
         }
     }
