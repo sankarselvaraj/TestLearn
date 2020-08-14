@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                bat(/"terraform -version"/)
+                bat(/"C:\Users\sanka\Learn\terraform\terraform -version"/)
             }
         }
     }
