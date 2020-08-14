@@ -1,6 +1,8 @@
 pipeline {
     agent any
-
+    environment {
+        TF_WORKSPACE = 'terraform1'
+    }
     stages {
         stage('Build') {
             steps {
@@ -16,7 +18,6 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
-                cd 'C:\Users\sanka\Learn\terraform\terraform1\"
                 bat(/"C:\Users\sanka\Learn\terraform\terraform" plan -var-file=C:\Users\sanka\Learn\terraform\terraform.tfvars"/)
 
             }
