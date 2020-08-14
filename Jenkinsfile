@@ -17,7 +17,7 @@ pipeline {
             steps {
                 echo 'Deploying...'
                 cd 'C:\Users\sanka\Learn\terraform\terraform1\"
-                bat(/"C:\Users\sanka\Learn\terraform\terraform" plan -var-file="C:\/Users\/sanka\/Learn\/terraform\/terraform.tfvars"/)
+                bat(/"C:\Users\sanka\Learn\terraform\terraform" plan -var-file=C:\Users\sanka\Learn\terraform\terraform.tfvars"/)
 
             }
         }
