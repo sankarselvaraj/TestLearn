@@ -20,5 +20,11 @@ pipeline {
                 bat(/"C:\Users\sanka\Learn\terraform\terraform" plan -var-file="../terraform.tfvars"/)
             }
         }
+        stage('Verification') {
+            steps {
+                echo 'Post deployment test...'
+                bat(/"C:\Program Files\Java\jdk-11.0.2\bin\java" HelloWorld/)
+            }
+        }
     }
 }
