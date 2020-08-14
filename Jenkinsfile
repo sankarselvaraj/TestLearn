@@ -20,7 +20,7 @@ pipeline {
                 echo 'Deploying...'
                 bat(/"C:\Users\sanka\Learn\terraform\terraform" init C:\Users\sanka\Learn\terraform\terraform1/)
                 bat(/"C:\Users\sanka\Learn\terraform\terraform" plan -var-file=C:\Users\sanka\Learn\terraform\terraform.tfvars C:\Users\sanka\Learn\terraform\terraform1/)
-
+                bat(/"C:\Users\sanka\Learn\terraform\terraform" apply -var-file=C:\Users\sanka\Learn\terraform\terraform.tfvars C:\Users\sanka\Learn\terraform\terraform1/)
             }
         }
         stage('Verification') {
