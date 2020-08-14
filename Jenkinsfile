@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                bat(/"C:\Program Files\Java\jdk-11.0.2\bin\java" HelloWorld/)
             }
         }
         stage('Deploy') {
