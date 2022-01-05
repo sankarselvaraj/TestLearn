@@ -8,6 +8,6 @@ public class HelloWorld {
     }
     public static void main(String args[]){
         HelloWorld hw = new HelloWorld();
-        hw.printMethod("Sankar Test1");
+        hw.printMethod("Sankar Test2");
     }
 }
